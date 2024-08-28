@@ -1,4 +1,3 @@
-require('dotenv').config({ path: './index.env' }); // Specify the path to your .env file
 const express = require('express');
 const mongoose = require('mongoose');
 const Blog = require('./modules/blog');
@@ -64,7 +63,7 @@ app.get('/single-blog',(req,res)=>{
   })
 })
 
-// Define routes (as per your code)
+// Defining routes 
 app.get('/', (req, res) => {
   res.redirect('/blogs')
 });
