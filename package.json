@@ -41,13 +41,8 @@
     "undefsafe": "^2.0.5"
   },
   "scripts": {
-<<<<<<< HEAD
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
     "start": " node app.js ",
-    "test": "echo \"Error: no test specified\" && exit 1",
->>>>>>> 14c3bf650b9f19a27ee433900ef4e96893bd941d
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
