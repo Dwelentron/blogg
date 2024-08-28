@@ -1,0 +1,30 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <body> 
+        <div>
+            <h1>Techla Blog</h1>
+            <%- include('./partials/nav.ejs') %>
+        </div>
+        <!-- <p><%=  %></p> Dynamic description -->
+        <div>
+            <h2><%= heading %></h2> <!-- Dynamic heading -->
+            <!-- You can loop through blogs and display them here -->
+            <%if (blogPosts.length > 0) { %>
+
+            <% blogPosts.forEach(function(blog) { %>
+        <div class="blog-post">
+            <a href="/blogs/<%= blog._id  %>">
+                <h2><%= blog.title %></h2>
+                <p><%= blog.Snippet %></p>
+            </a>   
+        </div>
+
+        <% }); %>
+
+        <% } else { %>
+        <p>no blogs for now</p>
+        <% } %>
+        </div>
+        <%- include('./partials/footer.ejs') %>
+    </body>
+</html>
