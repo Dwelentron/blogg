@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Blog = require('../modules/blog');
+const Blog = require('./modules/blog');
 const { result } = require('lodash');
 
 // Express app
