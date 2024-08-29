@@ -38,17 +38,17 @@ const router = express.Router()
   })
   
   // handling the blog deleting
-  router.delete('/blogs/:id',(req,res)=>{
-    const id = req.params.id
+//   router.delete('/blogs/:id',(req,res)=>{
+//     const id = req.params.id
   
-    Blog.findByIdAndDelete(id)
-    .then((result)=>{
-      res.json({ redirect: '/'})
-    })
-    .catch((err)=>{
-      console.log(err);
+//     Blog.findByIdAndDelete(id)
+//     .then((result)=>{
+//       res.json({ redirect: '/'})
+//     })
+//     .catch((err)=>{
+//       console.log(err);
       
-    })
-  })
+//     })
+//   })
 
   module.exports = router

@@ -11,11 +11,13 @@
             <p><%= blog.body %></p>
         </section>
         <section>
-            <a class="delete" data-doc="<%= blog._id %>">Delete</a>
+            <a href="/blogs" class="delete" >Back</a>
         </section>
     </div>
     <%- include('./partials/footer.ejs') %>
-    <script>
+    
+    <!-- "<script>
+        data-doc="<>%= blog._id % <>"
         const deleteBlogg = document.querySelector('a.delete')
 
         deleteBlogg.addEventListener('click', (e)=>{
@@ -30,6 +32,6 @@
             })
             })
             
-    </script>
+    </script> " -->
 </body>
 </html>
