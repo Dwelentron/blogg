@@ -18,7 +18,11 @@ app.listen(3000);
 
 // Connect to the database using the environment variable
 const dbURL = "mongodb+srv://suelshustle:suelshustle12345@blogg.341z1.mongodb.net/?retryWrites=true&w=majority&appName=blogg"
-mongoose.connect(dbURL)
+mongoose.connect(dbURL,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
+})
   .then((result) => console.log("")
   )
   .catch((err) => console.log(err));
